@@ -4,8 +4,8 @@
 ### tehtävä x: Tiivistelmä luetusta artikkelista
 #### "Mitä ovat vapaat ohjelmistot?"
 
-- Perusajatukseltaan vapaa ohjelmisto = kunnioittaa käyttäjien vapauta ja yhteisöllisyyttä
-- Vapaa ei välttämättä tarkoita ilmaista, vaan termillä 'vapaa' viitataan käyttäjän oikeuksiin käyttää, kopioida, muokata ja jakaa ohjelmaa
+- Perusajatukseltaan vapaa ohjelmisto = ohjelma, joka kunnioittaa käyttäjien vapautta ja yhteisöllisyyttä
+- Vapaa ei välttämättä tarkoita ilmaista, vaan termillä 'vapaa' viitataan käyttäjän oikeuteen käyttää, kopioida, muokata ja jakaa ohjelmaa
 - Ohjelma on vapaa, mikäli se täyttää neljä kriteeriä:
   - käyttäjällä on oikeus käyttää ohjelmaa mihin ja miten haluaa, kaupallisesti tai ei-kaupallisesti
   - käyttäjällä on oikeus tarkistella, miten ohjelma toimii ja muuttaa sen toimintatapaa omien 
@@ -13,16 +13,15 @@
   - käyttäjällä on oikeus jakaa eteenpäin kopioita ohjelmasta
   -  käyttäjällä on oikeus jakaa eteenpäin kopioita ohjelmaan tekemistään muutoksista
 - Ohjelman lähdekoodin tulee olla saatavilla, eikä se saa olla suunniteltu niin, että muokatut versiot ohjelmasta eivät toimi (ns. "lockdown" / "secure boot")
-- Ohjelman vapautta miettiessä tulee huomioida kaikki käytetyt koodit ja arvioida, tekeekö niiden välinen keskinen riippuvuus tarpeelliseksi, että ne ovat kaikki vapaita
+- Ohjelman vapautta miettiessä tulee huomioida kaikki käytetyt koodit ja arvioida, tekeekö niiden välinen riippuvuus tarpeelliseksi, että ne ovat kaikki vapaita
 - Vapaa ohjelma voi olla myös kaupallinen, ja sen käyttö kaupallisiin tarkoituksiin on oltava sallittua
-  - käyttäjän tulee siis saada kopioida ja jakaa (joko alkuperäistä tai muokattua versiota) rajattomasti, joko ilmaiseksi tai voittoa tehden
+  - käyttäjän tulee siis saada kopioida ja jakaa (joko alkuperäistä tai muokattua versiota) rajattomasti, joko ilmaiseksi tai voittoa tehden, ilman erillisiä lupia tai ilmoituksia
 - Näiden vapauksien tulee koskea kaikkia käyttäjiä tasa-arvoisesti
-- Käyttäjän pitää saada jakaa ohjelmaa ja sen verisoita täysin vapaasti, ilman erillisiä lupia tai ilmoituksia.
 - Sen, että ohjelma on vapaa, ei kuitenkaan tarvitse taata ohjelman hyödyllisyyttä tai käytännöllisyyttä
 - Tietynlaiset jakelutapaa koskevat säädökset, kuten copyleft, ovat sallittuja eivätkä vaikuta ohjelman vapauteen, kunhan ne edesauttavat neljän ydinkriteerin täyttymistä
-   - pakkaamiseen ja jakeluun liittyvät säädökset ja rajoitukset ovat sallittuja, kunhan ne eivät ole käyttäjälle kohtuuttoman raskaita. Esimerkkinä vaatimus logon poistamisesta muokatuissa ohjelmaversioissa
+   - pakkaamiseen ja jakeluun liittyvät säädökset ja rajoitukset ovat sallittuja, kunhan ne eivät ole käyttäjälle kohtuuttoman raskaita. Esimerkkinä vaatimus aiemman version käyttäjän logon poistamisesta muokatuissa ohjelmaversioissa
    - mikäli ohjelman lisenssi edellyttää ohjelman nimen vaihtamista muokatuissa versioissa, tulee säilyttää vaihtoehto määrittää alkuperäisen ohjelman nimi muunnellun version aliakseksi, jotta ohjelma voidaan yhä määritellä vapaaksi
-- Vapaan ohjelman lisenssissä ei saa vaatia kuin vähäisen vientisääntelyn nouudattamista. Näin valtiolliset vientisäädökset ja kauppapakotteet eivät vaikuta ohjelman vapauteen
+- Vapaan ohjelman lisenssissä ei saa vaatia kuin vähäisen vientisääntelyn noudattamista. Näin valtiolliset vientisäädökset ja kauppapakotteet eivät vaikuta ohjelman vapauteen
 - Ohjelman kehittäjällä ei saa olla mahdollisuutta palata muokkaamaan ohjelman lisenssiä ja sen ehtoja jälkikäteen
 - Ohjelman lisenssi voi perustua tekijänoikeuksiin tai yksittäisiin sopimuksiin. Lisenssin peruste ei kuitenkaan saa rikkoa vapaan ohjelman neljää perusvaatimusta
 - Myös ohjelman käsikirjojen tulee olla vapaasti saatavilla, sillä ne lasketaan olennaiseksi osaksi ohjelmaa
