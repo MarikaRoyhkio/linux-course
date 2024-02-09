@@ -1,4 +1,6 @@
-## Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4)
+## Tehtävä x: Tiivistelmä luetuista artikkeleista
+
+### Susanna Lehto 2022: Teoriasta käytäntöön pilvipalvelimen avulla (h4)
 
 a)
 - GitHub Education-paketilla opiskelija voi saada palvelimen ja domainnimen käyttöönsä ilmaiseksi
@@ -44,48 +46,82 @@ Virtuaalipalvelimen vuokraus
 
 17:48
 
-Lähdin hakemaan GitHub Education pakettia, joilla saisin määräaikaisesti ilmaisen domain-nimen ja verkkopalveimen. Täytin ja tallensin tietoni, ja sain ilmoituksen, että saisin yhteydenoton GitHubilta liittyen Education pakettiin ”tunnin tai viimeistään 7 päivän kuluessa”
-Lopulta kävi niin, että ei se ainakaan tunnissa tullut, joten jatkoin tehtävien tekemistä ilman sitä.
+Lähdin hakemaan GitHub Education pakettia, joilla saisin määräaikaisesti ilmaisen domain-nimen ja verkkopalveimen. Täytin ja tallensin tietoni, ja sain ilmoituksen, että saisin yhteydenoton GitHubilta liittyen Education pakettiin ”tunnin tai viimeistään 7 päivän kuluessa”. Lopulta kävi niin, että ei se ainakaan tunnissa tullut, joten jatkoin tehtävien tekemistä ilman sitä.
+
 19:37 Minulla oli jo DigitalOceanin tunnukset, vaikken ole sillä ennen mitään tehnyt. Tällä kertaa valitsin ”Deploy virtual machine”
-KUVA
+
+<img src="Näyttökuva 2024-02-09 194155.png" alt="kuva" style="height: 500px; width:700px;"/>
+
 Alueeksi valitsin sen, mikä on suositellusti lähimpänä sivun käyttäjiä, eli Euroopassa.
-KUVA
+
+<img src="Näyttökuva 2024-02-09 194215.png" alt="kuva2" style="height: 500px; width:700px;"/>
+
 Seuraavaksi valitsin Debianin, sillä sitä käytän virtuaalikoneellani
-KUVA
+
+<img src="Näyttökuva 2024-02-09 194253.png" alt="kuva3" style="height: 500px; width:700px;"/>
+
 Tyypiksi valitsin halvimmat, basic type (shared cpu)
-KUVA
+
+<img src="Näyttökuva 2024-02-09 194343.png" alt="kuva4" style="height: 500px; width:700px;"/>
+
 Salauksen otin salasanalla
+
+<img src="Näyttökuva 2024-02-09 194522.png" alt="kuva5" style="height: 500px; width:700px;"/>
+
 Hostname ei liity varsinaisesti mihinkään, mutta on muidenkin silmille sopiva.
-Seuraavaksi avasin virtuaalikoneen, ja yhdistin sen verkkopalvelimeen komentorivissä komennolla
+
+19:45 Seuraavaksi avasin virtuaalikoneen, ja yhdistin sen verkkopalvelimeen komentorivissä komennolla
+    
     ssh root@verkkopalvelimen IP osoite
+
 Seuraavaksi asensin palomuurin käyttäen seuraavia komentoja, alla mainitussa järjestyksessä:
+    
     sudo apt-get update
     sudo apt-get install ufw
     sudo ufw allow 22/tcp
     sudo ufw enable
     sudo ufw status
+
 Seuraavaksi loin käyttäjän:
+    
     sudo adduser marikar
+
 Asetin käyttäjälle salasanan, ja täytin koemntorivin kysymistä tiedoista vain nimen.
+    
     sudo adduser marikar sudo
+
 Tässä vaiheessa avasin toisen terminaalin päällekkäin tämän kanssa. siirryin käyttämään vuokraamani palvelinta komennolla
+    
     ssh marikar@ip osoite
+
 Asetin salasanan. Tämän jälkeen testasin toimivuutta komennolla
+    
     sudo echo ”Moi”
-KUVA
+
 Lukitsin root-tunnuksen  komennolla 
+    
     sudo usermod –lock root
 
 Päivitin kaikki paketit. Seuraavaksi asensin apachen:
+    
     sudp apt-get install apache2
-Selain löysi localhost sivun IP-osoitteella.
 
-Seuraavaksi korvasin oletussivun omalla sivullani:
+Selain löysi localhost sivun IP-osoitteella
+
+<img src="Näyttökuva 2024-02-09 203914.png" alt="kuva6" style="height: 500px; width:700px;"/>
+
+20:01 Seuraavaksi korvasin oletussivun omalla sivullani:
+
 Loin uuden HTML-sivun komennolla
+   
     nano aloitussivu.html
+
 Kirjoitin HTML5 sivun, jossa on otsikko, sekä tekstiä. Tallensin tiedoston. Seuraavaksi korvasin ”index.html” tiedoston juuri äsken luomallani tiedostolla komennolla
+    
     sudo mv aloitussivu.html /var/www/html/index.html
+
 Uudelleenkäynnistin apachen komennolla
+    
     sudo systemctl restart apache2
 
 Testasin, toimiko muutos hakemalla sivua nettiselaimella palvelimen IP-osoitteella. Pyysin myös puolisoani testaamaan omalla kännykällään, näkyykö itse kirjoittamani sivu. 
