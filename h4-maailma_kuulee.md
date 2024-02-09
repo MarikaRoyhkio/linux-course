@@ -36,13 +36,14 @@ f)
 
       $ sudo apt-get dist-upgrade
 
-## First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
+### First Steps on a New Virtual Private Server – an Example on DigitalOcean and Ubuntu 16.04 LTS
 
 -	virtuaalipalvelinta luodessa on hyvä valita palvelinkeskus, joka on lähellä omaa sijaintia (esimerkiksi Euroopassa)
 -	ennen nimen vuokraamista, palvelimen voi löytää selaimessa IP osoitteella
 - oikeaa nimeä on kuitenkin helpompi hakea kuin pitkää numerosarjaa
 
-Virtuaalipalvelimen vuokraus
+## Tehtävät a, b, c ja d
+
 
 17:48
 
