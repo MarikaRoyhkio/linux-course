@@ -4,6 +4,8 @@ Kaikki tässä raportissa läpikäydyt tehtävät on suoritettu virtuaalikoneell
 
 #### Tehtävä a) Käännös
 
+Tehtävän palautettuani, ja muiden palautuksia nähtyäni totesin, että tehtävän ymmärrys meni varmaan vähän pieleen tämän kohdalla :) 
+
 Avasin tekstieditorin luodakseni 'kaannos.sh' tiedoston
 
     nano kaannos.sh
